@@ -1,0 +1,9 @@
+@startuml
+annotation java.lang.Override
+class eva2_4_ejemplo_herencia.EVA2_4_EJEMPLO_HERENCIA
+class eva2_4_ejemplo_herencia.Empleado
+class eva2_4_ejemplo_herencia.Persona
+eva2_4_ejemplo_herencia.Empleado ..> java.lang.Override
+eva2_4_ejemplo_herencia.Empleado --|> eva2_4_ejemplo_herencia.Persona
+eva2_4_ejemplo_herencia.Persona ..> java.lang.Override
+@enduml
