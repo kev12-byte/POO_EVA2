@@ -1,0 +1,37 @@
+@startuml
+
+skinparam monochrome true
+skinparam classAttributeIconSize 0
+
+class Persona {
+------------------------
+- nombre : String
+- ap_paterno : String
+- ap_materno : String
+- rfc : String
+- edad : int
+- genero : char
+------------------------
++ Persona()
++ Persona(nombre, ap_paterno, ap_materno, rfc, edad, genero)
+------------------------
++ getNombre() : String
++ setNombre(nombre : String) : void
++ getAp_paterno() : String
++ setAp_paterno(ap_paterno : String) : void
++ getAp_materno() : String
++ setAp_materno(ap_materno : String) : void
++ getRfc() : String
++ setRfc(rfc : String) : void
++ getEdad() : int
++ setEdad(edad : int) : void
++ getGenero() : char
++ setGenero(genero : char) : void
+------------------------
++ generarNombreCom() : String
++ regresarGenero() : String
++ imprimirDatos() : void
++ toString() : String
+}
+
+@enduml
