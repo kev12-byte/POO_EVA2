@@ -1,0 +1,46 @@
+@startuml
+
+class Empleado {
+    - numeroEmpleado : String
+    - nombre : String
+    - apellido : String
+    - salario : double
+
+    + Empleado(numeroEmpleado:String, nombre:String, apellido:String, salario:double)
+
+    + calcularSalario() : double
+    + toString() : String
+}
+
+class EmpleadoBase {
+    - anioIngreso : int
+
+    + EmpleadoBase(anioIngreso:int, numeroEmpleado:String, nombre:String, apellido:String, salario:double)
+
+    + antiguedad() : int
+    + calcularSalario() : double
+    + toString() : String
+}
+
+class EmpleadoHonorario {
+    - horas : int
+    - pagoPorHora : double
+
+    + EmpleadoHonorario(horas:int, pagoPorHora:double, numeroEmpleado:String, nombre:String, apellido:String)
+
+    + calcularSalario() : double
+    + toString() : String
+}
+
+class EVA2_5_EJEMPLO_HERENCIA {
+    + main(args:String[]) : void
+}
+
+EmpleadoBase --|> Empleado
+EmpleadoHonorario --|> Empleado
+
+EVA2_5_EJEMPLO_HERENCIA --> Empleado
+EVA2_5_EJEMPLO_HERENCIA --> EmpleadoBase
+EVA2_5_EJEMPLO_HERENCIA --> EmpleadoHonorario
+
+@enduml
