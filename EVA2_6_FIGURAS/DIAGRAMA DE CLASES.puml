@@ -1,0 +1,40 @@
+@startuml
+
+abstract class Figuras {
+    {abstract} +calcularArea(): double
+    {abstract} +calcularPerimetro(): double
+}
+
+class Triangulo {
+    -base: double
+    -altura: double
+    -lado1: double
+    -lado2: double
+    -lado3: double
+    +Triangulo(base: double, altura: double, lado1: double, lado2: double, lado3: double)
+    +calcularArea(): double
+    +calcularPerimetro(): double
+    +toString(): String
+}
+
+class Circulo {
+    -radio: double
+    +Circulo(radio: double)
+    +calcularArea(): double
+    +calcularPerimetro(): double
+    +toString(): String
+}
+
+class Main {
+    +main(args: String[]): void
+}
+
+' HERENCIA (generalización)
+Figuras <|-- Triangulo : hereda
+Figuras <|-- Circulo : hereda
+
+' USO (dependencia)
+Main --> Triangulo : crea/usa
+Main --> Circulo : crea/usa
+
+@enduml
