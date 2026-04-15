@@ -1,0 +1,46 @@
+@startuml
+title Herencia entre Persona y Alumno
+
+skinparam classAttributeIconSize 0
+skinparam shadowing true
+
+' ===== Clase abstracta =====
+abstract class Persona {
+    # nombre : String
+    # apellidos : String
+    # edad : int
+
+    + Persona()
+    + Persona(nombre : String, apellidos : String, edad : int)
+
+    + getNombre() : String
+    + setNombre(nombre : String) : void
+    + getApellidos() : String
+    + setApellidos(apellidos : String) : void
+    + getEdad() : int
+    + setEdad(edad : int) : void
+}
+
+' ===== Clase hija =====
+class Alumno {
+    - matricula : String
+
+    + Alumno()
+    + Alumno(nombre : String, apellidos : String, edad : int, matricula : String)
+
+    + getMatricula() : String
+    + setMatricula(matricula : String) : void
+}
+
+' ===== Clase main =====
+class EVA2_8_CLASES_ABSTRACTAS {
+    + main(args : String[]) : void
+}
+
+' ===== RELACIÓN DE HERENCIA =====
+Alumno --|> Persona : "HEREDA de"
+
+' ===== Relación de uso =====
+EVA2_8_CLASES_ABSTRACTAS --> Alumno : "crea objeto"
+
+@enduml

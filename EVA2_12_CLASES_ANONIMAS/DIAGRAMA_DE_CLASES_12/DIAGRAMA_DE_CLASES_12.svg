@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="267px" preserveAspectRatio="none" style="width:480px;height:267px;background:#FFFFFF;" version="1.1" viewBox="0 0 480 267" width="480px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="fme6xoa4wz15d" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/>
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+        </filter>
+    </defs>
+    <g>
+        <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="322" x="72.25" y="24.5332">Clases Anónimas y Polimorfismo en Interfaces</text>
+        <!--class Prueba-->
+        <g id="elem_Prueba">
+            <rect codeLine="7" fill="#F1F1F1" filter="url(#fme6xoa4wz15d)" height="65.6094" id="Prueba" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="169" x="155" y="189.6094"/>
+            <ellipse cx="212.25" cy="205.6094" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M213.2031,202.25 L213.2031,208.9063 L214.9219,208.9063 Q215.5313,208.9063 215.7969,209.1406 Q216.0625,209.375 216.0625,209.7656 Q216.0625,210.1406 215.7969,210.375 Q215.5313,210.6094 214.9219,210.6094 L209.7813,210.6094 Q209.1719,210.6094 208.9063,210.375 Q208.6406,210.1406 208.6406,209.75 Q208.6406,209.375 208.9063,209.1406 Q209.1719,208.9063 209.7813,208.9063 L211.5,208.9063 L211.5,202.25 L209.7813,202.25 Q209.1719,202.25 208.9063,202.0156 Q208.6406,201.7813 208.6406,201.3906 Q208.6406,201.0156 208.9063,200.7813 Q209.1719,200.5469 209.7813,200.5469 L214.9219,200.5469 Q215.5313,200.5469 215.7969,200.7813 Q216.0625,201.0156 216.0625,201.3906 Q216.0625,201.7813 215.7969,202.0156 Q215.5313,202.25 214.9219,202.25 L213.2031,202.25 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="46" x="232.75" y="211.3379">Prueba</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="156" x2="323" y1="221.6094" y2="221.6094"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="156" x2="323" y1="229.6094" y2="229.6094"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="157" x="161" y="248.1426">+mostrarMensaje() : void</text>
+        </g>
+        <!--class EVA2_12_CLASES_ANONIMAS-->
+        <g id="elem_EVA2_12_CLASES_ANONIMAS">
+            <rect codeLine="12" fill="#F1F1F1" filter="url(#fme6xoa4wz15d)" height="65.6094" id="EVA2_12_CLASES_ANONIMAS" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="231" x="7" y="45.6094"/>
+            <ellipse cx="22" cy="61.6094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M24.7656,57.4844 Q24.9219,57.2656 25.1094,57.1563 Q25.2969,57.0469 25.5156,57.0469 Q25.8906,57.0469 26.125,57.3125 Q26.3594,57.5625 26.3594,58.1719 L26.3594,59.625 Q26.3594,60.2344 26.125,60.5 Q25.8906,60.7656 25.5156,60.7656 Q25.1719,60.7656 24.9688,60.5625 Q24.7656,60.375 24.6563,59.8594 Q24.6094,59.5 24.4219,59.3125 Q24.0938,58.9375 23.4844,58.7188 Q22.875,58.5 22.25,58.5 Q21.4844,58.5 20.8438,58.8281 Q20.2188,59.1563 19.7188,59.9063 Q19.2344,60.6563 19.2344,61.6875 L19.2344,62.7813 Q19.2344,64.0156 20.125,64.8438 Q21.0156,65.6563 22.6094,65.6563 Q23.5469,65.6563 24.2031,65.4063 Q24.5938,65.25 25.0156,64.8125 Q25.2813,64.5469 25.4219,64.4688 Q25.5781,64.3906 25.7813,64.3906 Q26.1094,64.3906 26.3594,64.6563 Q26.625,64.9063 26.625,65.25 Q26.625,65.5938 26.2813,66 Q25.7813,66.5781 24.9844,66.9063 Q23.9063,67.3594 22.6094,67.3594 Q21.0938,67.3594 19.8906,66.7344 Q18.9063,66.2344 18.2188,65.1719 Q17.5313,64.0938 17.5313,62.8125 L17.5313,61.6563 Q17.5313,60.3281 18.1406,59.1875 Q18.7656,58.0313 19.8594,57.4219 Q20.9531,56.7969 22.1875,56.7969 Q22.9219,56.7969 23.5625,56.9688 Q24.2188,57.125 24.7656,57.4844 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="199" x="36" y="67.3379">EVA2_12_CLASES_ANONIMAS</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="237" y1="77.6094" y2="77.6094"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="237" y1="85.6094" y2="85.6094"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="171" x="13" y="104.1426">+main(args : String[]) : void</text>
+        </g>
+        <!--class Clase An?nima-->
+        <g id="elem_Clase Anónima">
+            <rect codeLine="17" fill="#F1F1F1" filter="url(#fme6xoa4wz15d)" height="65.6094" id="Clase Anónima" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="169" x="273" y="45.6094"/>
+            <ellipse cx="306.9" cy="61.6094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M309.6656,57.4844 Q309.8219,57.2656 310.0094,57.1563 Q310.1969,57.0469 310.4156,57.0469 Q310.7906,57.0469 311.025,57.3125 Q311.2594,57.5625 311.2594,58.1719 L311.2594,59.625 Q311.2594,60.2344 311.025,60.5 Q310.7906,60.7656 310.4156,60.7656 Q310.0719,60.7656 309.8688,60.5625 Q309.6656,60.375 309.5563,59.8594 Q309.5094,59.5 309.3219,59.3125 Q308.9938,58.9375 308.3844,58.7188 Q307.775,58.5 307.15,58.5 Q306.3844,58.5 305.7438,58.8281 Q305.1188,59.1563 304.6188,59.9063 Q304.1344,60.6563 304.1344,61.6875 L304.1344,62.7813 Q304.1344,64.0156 305.025,64.8438 Q305.9156,65.6563 307.5094,65.6563 Q308.4469,65.6563 309.1031,65.4063 Q309.4938,65.25 309.9156,64.8125 Q310.1813,64.5469 310.3219,64.4688 Q310.4781,64.3906 310.6813,64.3906 Q311.0094,64.3906 311.2594,64.6563 Q311.525,64.9063 311.525,65.25 Q311.525,65.5938 311.1813,66 Q310.6813,66.5781 309.8844,66.9063 Q308.8063,67.3594 307.5094,67.3594 Q305.9938,67.3594 304.7906,66.7344 Q303.8063,66.2344 303.1188,65.1719 Q302.4313,64.0938 302.4313,62.8125 L302.4313,61.6563 Q302.4313,60.3281 303.0406,59.1875 Q303.6656,58.0313 304.7594,57.4219 Q305.8531,56.7969 307.0875,56.7969 Q307.8219,56.7969 308.4625,56.9688 Q309.1188,57.125 309.6656,57.4844 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="95" x="325.1" y="67.3379">Clase Anónima</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="274" x2="441" y1="77.6094" y2="77.6094"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="274" x2="441" y1="85.6094" y2="85.6094"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="157" x="279" y="104.1426">+mostrarMensaje() : void</text>
+        </g>
+        <!--link Clase An?nima to Prueba-->
+        <g id="link_Clase Anónima_Prueba">
+            <path codeLine="24" d="M344.25,111.7894 C337.05,127.1594 327.21,145.2794 315.5,159.6094 C306.67,170.4194 309.5714,169.2105 298.7414,178.1505 " fill="none" id="Clase Anónima-to-Prueba" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/>
+            <polygon fill="none" points="284.86,189.6094,302.561,182.7776,294.9218,173.5233,284.86,189.6094" style="stroke:#181818;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="145" x="327.5" y="156.1045">IMPLEMENTA (anónima)</text>
+        </g>
+        <!--link EVA2_12_CLASES_ANONIMAS to Prueba-->
+        <g id="link_EVA2_12_CLASES_ANONIMAS_Prueba">
+            <path codeLine="27" d="M149.05,111.8294 C168.2,135.0694 190.1139,161.6793 209.2439,184.8893 " fill="none" id="EVA2_12_CLASES_ANONIMAS-to-Prueba" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="213.06,189.5194,210.4225,180.0302,209.8799,185.661,204.2491,185.1184,213.06,189.5194" style="stroke:#181818;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="117" x="189.5" y="156.1045">crea objeto anónimo</text>
+        </g>
+        <!--SRC=[dP7TIWCn48NlynJ3thX5MhIN1OMmH0ZifajJlH4fqsrQKxk99AdYtrFuA3w2BsPQMblw0-BSpZdppSm9EimKP3FqoWCrtrz6r-ZX1KexqxLrO-rh2ye0Dq6vCLRA4-8Vj7b4XpLKqUXf24uFvq7noXgfNnMSRKdyFOxiipOJ26wk23c1Yzq2BlgiTqKpjjyZUWs6Clg726y4Ofr2RNrmw0fbF4vLse0EF5az8X-76LbE9OEonqN6IveV82sF0NP3suFpzc2fbmCgke8NL6wmg4sARk8ZJyR3pUJsxcziAhu_5xEEefDb3hyn9FyzjSTocl6kOF80AZfuKUQiOA8VLN4bI7Vss_GtoJJ8tdQjrllbEfGE95kk55UYHhBWNSikC045vO8SUs-pkJshSWh13gSgM5ZDiWdv0G00]-->
+    </g>
+</svg>
