@@ -1,0 +1,46 @@
+@startuml
+title Composicion - Persona y Direccion
+
+skinparam classAttributeIconSize 0
+
+class EVA2_16_COMPOSICION {
++main(args : String[]) : void
+}
+
+class Persona {
+-nombre : String
+-apellido : String
+-edad : int
+-direccion : Direccion
+--
++Persona()
++Persona(nombre, apellido, edad, direccion)
++Persona(nombre, apellido, edad, calle, numero, colonia)
++toString() : String
+}
+
+class Direccion {
+-calle : String
+-numero : int
+-colonia : String
+-cp : String
+--
++Direccion(calle, numero, colonia, cp)
++toString() : String
+}
+
+EVA2_16_COMPOSICION --> Persona : crea objeto
+
+Persona --> Direccion : crea objeto
+Persona *-- Direccion : TIENE
+
+note left of EVA2_16_COMPOSICION
+Se crean objetos Persona
+end note
+
+note right of Persona
+COMPOSICION:
+Persona contiene Direccion
+end note
+
+@enduml

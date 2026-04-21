@@ -1,0 +1,80 @@
+@startuml
+title Polimorfismo - Persona, Empleado y Cliente
+
+skinparam classAttributeIconSize 0
+
+class EVA2_15_POLIMORFISMO {
++main(args : String[]) : void
++imprimir(perso : Persona) : void
+}
+
+class Persona {
+-nombre : String
+-aperllidos : String
+-edad : int
+--
++Persona()
++Persona(nombre, aperllidos, edad)
+--
++generarDatos() : String
+}
+
+class Empleado {
+-puesto : String
+-salario : double
+--
++Empleado(puesto, salario, nombre, aperllidos, edad)
+--
++generarDatos() : String
+}
+
+class Cliente {
+-rfc : String
+-credito : int
+--
++Cliente(rfc, credito, nombre, aperllidos, edad)
+--
++generarDatos() : String
+}
+
+' CREACION DE OBJETOS
+EVA2_15_POLIMORFISMO --> Empleado : crea objeto
+EVA2_15_POLIMORFISMO --> Cliente : crea objeto
+
+' HERENCIA
+Empleado --|> Persona : HEREDA
+Cliente --|> Persona : HEREDA
+
+' POLIMORFISMO
+EVA2_15_POLIMORFISMO --> Persona : usa polimorfismo
+
+note left of EVA2_15_POLIMORFISMO
+POLIMORFISMO:
+
+Persona perso = empleado
+Persona perso2 = cliente
+
+Se usa en:
+imprimir(Persona)
+end note
+
+note right of Persona
+HERENCIA:
+
+Empleado y Cliente
+son tipos de Persona
+
+Sobrescriben:
+generarDatos()
+end note
+
+note bottom of EVA2_15_POLIMORFISMO
+CASTING:
+
+(Cliente) perso2 ✔
+(Cliente) perso ❌
+
+(depende del tipo real)
+end note
+
+@enduml

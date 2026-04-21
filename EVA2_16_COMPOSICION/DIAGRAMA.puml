@@ -1,0 +1,79 @@
+@startuml
+title Polimorfismo - Vehiculo (Electrico y Combustion)
+
+skinparam classAttributeIconSize 0
+
+class EVA2_COMPOSICION_VEHICULO {
++main(args : String[]) : void
+}
+
+class Electrico {
+-tipoBateria : String
+-tiempoCarga : int
+--
++Electrico(tipoBateria : String, tiempoCarga : int, potencia : double)
++toString() : String
+}
+
+class Combustion {
+-tipoCombustible : String
+-cilindros : int
+--
++Combustion(tipoCombustible : String, cilindros : int, potencia : double)
++toString() : String
+}
+
+class Motor {
+-potencia : double
+--
++Motor(potencia : double)
++toString() : String
+}
+
+class Vehiculo {
+-marca : String
+-modelo : String
+-annio : int
+-motor : Motor
+--
++Vehiculo(marca : String, modelo : String, annio : int, motor : Motor)
++toString() : String
+}
+
+' CREACION DE OBJETOS (como tu imagen)
+EVA2_COMPOSICION_VEHICULO --> Electrico : crea objeto
+EVA2_COMPOSICION_VEHICULO --> Combustion : crea objeto
+
+' COMPOSICION
+Vehiculo *-- Motor : TIENE
+
+' HERENCIA
+Electrico --|> Motor : HEREDA
+Combustion --|> Motor : HEREDA
+
+' USO DE POLIMORFISMO
+EVA2_COMPOSICION_VEHICULO --> Vehiculo : usa polimorfismo
+
+note left of EVA2_COMPOSICION_VEHICULO
+usa polimorfismo
+
+Motor puede ser:
+- Electrico
+- Combustion
+
+Se usa cuando:
+Vehiculo recibe Motor
+end note
+
+note right of Motor
+HERENCIA:
+Electrico y Combustion
+son tipos de Motor
+end note
+
+note bottom of Vehiculo
+COMPOSICION:
+Vehiculo TIENE un Motor
+end note
+
+@enduml
